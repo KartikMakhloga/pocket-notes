@@ -57,6 +57,8 @@ const Note = ({ groupId, group }) => {
                 {notes.map((note, index) => (
                     <div className='w-11/12 bg-white shadow-lg p-4' key={index} style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
                     <p className='items-start'>{note.content}</p>
+                    {/* display date and time */}
+                    <p className='text-right text-xs text-slate-400'>{new Date(note.createdAt).toLocaleString()}</p>
                 </div>
                 
                 ))}
