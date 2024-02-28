@@ -10,12 +10,7 @@ app.use(express.json());
 
 dotenv.config();
 
-app.use(
-	cors({
-		origin:"https://localhost:5173",
-		credentials:true,
-	})
-	)
+app.use(cors())
 	
 connectDB();
 
