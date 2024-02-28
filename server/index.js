@@ -12,7 +12,7 @@ dotenv.config();
 
 app.use(
 	cors({
-		origin:"https://vercel.com",
+		origin:"https://localhost:5173",
 		credentials:true,
 	})
 	)
