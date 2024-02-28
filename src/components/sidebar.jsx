@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../App.css"
 import Modal from 'react-modal';
-import { RxCross1 } from "react-icons/rx";
 import { apiConnector } from '../services/apiconnector';
 import { group } from '../services/apis'
 
@@ -48,7 +47,6 @@ const sidebar = ({ handleGroupClick }) => {
       };
 
     const handleCreate = () => {
-        // Implement your logic for creating a new group
         // api call to create group
         ; (async () => {
             const { data } = await apiConnector(
@@ -71,7 +69,7 @@ const sidebar = ({ handleGroupClick }) => {
     }
 
     useEffect(() => {
-        ; (async () => {
+        ;(async () => {
             const { data } = await apiConnector(
                 "GET",
                 group.GET_GROUPS
